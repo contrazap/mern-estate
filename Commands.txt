@@ -10,3 +10,12 @@ Add the @tailwind directives for each of Tailwind’s layers to your ./src/index
 
 npm i react-router-dom
 npm i react-icons
+
+------------------------------
+Backend:
+
+(In project root folder)
+npm init -y
+
+npm i express
+npm i nodemon
