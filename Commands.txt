@@ -1,0 +1,9 @@
+npm create vite@latest client
+cd client
+npm i
+
+Refer to config guide: https://tailwindcss.com/docs/guides/vitehttps://tailwindcss.com/docs/guides/vite
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+Edit tailwind.config.js
+Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
