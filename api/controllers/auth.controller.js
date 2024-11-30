@@ -3,10 +3,15 @@ import bcryptjs from "bcryptjs";
 
 export const signup = async (req, res, next) => {
   const { username, email, password } = req.body;
-  const hashedPassword = bcryptjs.hashSync(password, 10);
-  const newUser = new User({ username, email, password: hashedPassword });
 
   try {
+    if (!username) throw Error("Username is required");
+    if (!email) throw Error("Email is required");
+    if (!password) throw Error("Password is required");
+
+    const hashedPassword = bcryptjs.hashSync(password, 10);
+    const newUser = new User({ username, email, password: hashedPassword });
+
     await newUser.save();
     res.status(201).json({
       success: true,
