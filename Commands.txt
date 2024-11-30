@@ -11,6 +11,9 @@ Add the @tailwind directives for each of Tailwind’s layers to your ./src/index
 npm i react-router-dom
 npm i react-icons
 
+npm install @reduxjs/toolkit react-redux
+Refer to https://redux-toolkit.js.org/tutorials/quick-start
+
 ------------------------------
 Backend:
 
