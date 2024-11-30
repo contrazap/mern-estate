@@ -16,6 +16,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    avatar: {
+      type: String,
+      default: "https://picsum.photos/128/128",
+    },
   },
   { timestamps: true }
 );

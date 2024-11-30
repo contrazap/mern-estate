@@ -15,6 +15,7 @@ npm install @reduxjs/toolkit react-redux
 Refer to https://redux-toolkit.js.org/tutorials/quick-start
 
 npm i redux-persist
+npm install firebase
 
 ------------------------------
 Backend:
